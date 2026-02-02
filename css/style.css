@@ -1,5 +1,20 @@
+#homeBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  cursor: pointer;
+}
 body {
   background: #0e1a2b;
   color: white;
   font-family: Arial, sans-serif;
+}
+.slide {
+  height: 100vh;
+  padding: 80px;
+  box-sizing: border-box;
 }
