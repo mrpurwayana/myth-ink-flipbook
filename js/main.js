@@ -1,0 +1,1 @@
+console.log("Myth-Ink JS loaded");
