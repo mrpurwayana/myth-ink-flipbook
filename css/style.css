@@ -1,3 +1,22 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: #0e1a2b;
+  color: white;
+}
+
+/* HOME BUTTON */
 #homeBtn {
   position: fixed;
   top: 20px;
@@ -7,14 +26,41 @@
   border: 1px solid #d4af37;
   color: #d4af37;
   cursor: pointer;
+  z-index: 10;
 }
-body {
-  background: #0e1a2b;
-  color: white;
-  font-family: Arial, sans-serif;
+
+/* SLIDE INDICATOR */
+#navDots {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
+
+.dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background: #555;
+}
+
+/* SLIDES */
+#slides {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
 .slide {
   height: 100vh;
+  scroll-snap-align: start;
   padding: 80px;
-  box-sizing: border-box;
+}
+
+/* TEXT */
+h1, h2 {
+  margin-top: 0;
 }
